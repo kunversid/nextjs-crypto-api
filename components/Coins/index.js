@@ -1,7 +1,8 @@
-const Coins = () => {
+const Coins = ({ name, price }) => {
   return (
     <div>
-      <h1>Coins</h1>
+      <h1>{name}</h1>
+      <h1>{price}</h1>
     </div>
   );
 };
