@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
+import Footer from "./Footer";
 
-const Layout = ({ children, title = "Kunver Siddharth" }) => {
+const Layout = ({ children, title = "Crypto Tracker" }) => {
   return (
     <div className="layout">
       <Head>
@@ -67,6 +68,7 @@ const Layout = ({ children, title = "Kunver Siddharth" }) => {
         </Link>
       </header>
       <main>{children}</main>
+      <Footer />
     </div>
   );
 };

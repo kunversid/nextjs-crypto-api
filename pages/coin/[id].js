@@ -12,7 +12,7 @@ const Coin = ({ coin }) => {
             className={styles.coin_image}
           />
           <h1 className={styles.coin_name}>{coin.name}</h1>
-          <p className={styles.coin_ticker}>{coin.symbol}</p>
+          <p className={styles.coin_ticker}>{coin.symbol.toUpperCase()}</p>
           <p className={styles.coin_current}>
             &#8377;{coin.market_data.current_price.inr}
           </p>
